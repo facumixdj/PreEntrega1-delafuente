@@ -70,8 +70,24 @@ function sosargento() {
 }
 
 
+alert("Vamos a jugar un poco");
+alert("Primero vamos a cargar al jugador 1");
+const jugador1 = new Jugador(
+    (prompt("ingrese nombre del jugador 1")), (prompt("ingrese la edad del J1"))
+)
 preguntados();
 sosargento();
-console.log("Obstubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
+console.log("Felicitaciones " + jugador1.nombre + " obtubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
+puntajefinal = 0;
+alert("Ahora vamos a cargar al jugador 2");
+const jugador2 = new Jugador(
+    (prompt("ingrese nombre del jugador 2")), (prompt("ingrese la edad del J2"))
+)
+preguntados();
+sosargento();
+alert("Felicidades! obstubiste: " + puntajefinal);
 
+console.log("Felicitaciones " + jugador2.nombre + " obtubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
 
+console.log("Jugador 1, NOMBRE: " + jugador1.nombre + " con una edad de " + jugador1.edad);
+console.log("Jugador 2, NOMBRE: " + jugador2.nombre + " con una edad de " + jugador2.edad);
