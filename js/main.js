@@ -78,6 +78,7 @@ const jugador1 = new Jugador(
 preguntados();
 sosargento();
 console.log("Felicitaciones " + jugador1.nombre + " obtubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
+jugador1.puntaje = puntajefinal;
 puntajefinal = 0;
 alert("Ahora vamos a cargar al jugador 2");
 const jugador2 = new Jugador(
@@ -86,8 +87,8 @@ const jugador2 = new Jugador(
 preguntados();
 sosargento();
 alert("Felicidades! obstubiste: " + puntajefinal);
-
+jugador2.puntaje = puntajefinal;
 console.log("Felicitaciones " + jugador2.nombre + " obtubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
 
-console.log("Jugador 1, NOMBRE: " + jugador1.nombre + " con una edad de " + jugador1.edad);
-console.log("Jugador 2, NOMBRE: " + jugador2.nombre + " con una edad de " + jugador2.edad);
+console.log("Jugador 1, NOMBRE: " + jugador1.nombre + " con una edad de " + jugador1.edad + " con un puntaje de " + jugador1.puntaje + " Puntos");
+console.log("Jugador 2, NOMBRE: " + jugador2.nombre + " con una edad de " + jugador2.edad + " con un puntaje de " + jugador2.puntaje + " Puntos");
