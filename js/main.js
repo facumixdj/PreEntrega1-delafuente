@@ -77,6 +77,7 @@ const jugador1 = new Jugador(
 )
 preguntados();
 sosargento();
+alert("Felicidades! obstubiste: " + puntajefinal);
 console.log("Felicitaciones " + jugador1.nombre + " obtubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
 jugador1.puntaje = puntajefinal;
 puntajefinal = 0;
