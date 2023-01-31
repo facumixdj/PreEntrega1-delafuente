@@ -72,18 +72,24 @@ function sosargento() {
     }
 }
 
-
+//comienza el programa hace cargar a 1 jugador y juega primero luego termina y carga al segundo
+// luego al final del juego cuenta los puntos y los publica
 alert("Vamos a jugar un poco");
 alert("Primero vamos a cargar al jugador 1");
+
+//carga del jugador 1
 const jugador1 = new Jugador(
     (prompt("ingrese nombre del jugador 1")), (prompt("ingrese la edad del J1"))
 )
+//comienza el el script
 preguntados();
 sosargento();
 alert("Felicidades! obstubiste: " + puntajefinal);
 console.log("Felicitaciones " + jugador1.nombre + " obtubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
 jugador1.puntaje = puntajefinal;
+
 puntajefinal = 0;
+
 alert("Ahora vamos a cargar al jugador 2");
 const jugador2 = new Jugador(
     (prompt("ingrese nombre del jugador 2")), (prompt("ingrese la edad del J2"))
@@ -92,8 +98,9 @@ preguntados();
 sosargento();
 alert("Felicidades! obstubiste: " + puntajefinal);
 jugador2.puntaje = puntajefinal;
+alert("Fin del juego");
 console.log("Felicitaciones " + jugador2.nombre + " obtubiste un puntaje final de: ", puntajefinal, " Felicitaciones");
-
+console.log("Fin del juego");
 console.log("Jugador 1, NOMBRE: " + jugador1.nombre + " con una edad de " + jugador1.edad + " con un puntaje de " + jugador1.puntaje + " Puntos");
 console.log("Jugador 2, NOMBRE: " + jugador2.nombre + " con una edad de " + jugador2.edad + " con un puntaje de " + jugador2.puntaje + " Puntos");
 
