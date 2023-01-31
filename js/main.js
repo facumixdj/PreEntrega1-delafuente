@@ -49,11 +49,14 @@ function preguntados() {
         puntajefinal = (puntajefinal + 1);
     }
 }
-
+/* esta funcion   lo que hace es declarar 3 variables para que luego sean procesadas
+este proceso es simplemnete la fuma de los 3 campeonatos de argentina, del mundo.
+te suma 15 puntos si acertas las 3. si no No te da nada.
+*/
 function sosargento() {
-    let año1;
-    let año2;
-    let año3;
+    let ano1;
+    let ano2;
+    let ano3;
     alert("¿En que años salio Argentina campeon?Ingrese 1 año a la vez y unicamente 2 digitos")
     ano1 = prompt("Primer Campeonato de argentina");
     ano2 = prompt("Segundo Campeonato de Argentina");
@@ -62,7 +65,7 @@ function sosargento() {
     respuesta2 = (parseInt(ano1) + parseInt(ano2) + parseInt(ano3));
     if (respuesta2 == 186) {
         alert("SOS ARGENTINO! te felicito");
-        puntajefinal = (puntajefinal +1);
+        puntajefinal = (puntajefinal +15);
     }
     else {
         alert("Te falta calle");
@@ -93,3 +96,5 @@ console.log("Felicitaciones " + jugador2.nombre + " obtubiste un puntaje final d
 
 console.log("Jugador 1, NOMBRE: " + jugador1.nombre + " con una edad de " + jugador1.edad + " con un puntaje de " + jugador1.puntaje + " Puntos");
 console.log("Jugador 2, NOMBRE: " + jugador2.nombre + " con una edad de " + jugador2.edad + " con un puntaje de " + jugador2.puntaje + " Puntos");
+
+
