@@ -61,7 +61,7 @@ function sosargento() {
     //pido 3 numeros, lo convierto en integer o tipo numerico luego sumo usando un sumador
     //de nombre respuesta2 y comparo con la respuesta correcta
     // podria haber simplificado el codigo lo dejo comentado en la linea correspondiente
-    // lo hice asi para que sea mas claro
+
     alert("¿En que años salio Argentina campeon?Ingrese 1 año a la vez y unicamente 2 digitos")
     ano1 = prompt("Primer Campeonato de argentina");
     ano2 = prompt("Segundo Campeonato de Argentina");
@@ -73,7 +73,7 @@ function sosargento() {
         alert("SOS ARGENTINO! te felicito");
         puntajefinal = (puntajefinal +15);
     } 
-    
+
 */  respuesta2 = 0;
     respuesta2 = (parseInt(ano1) + parseInt(ano2) + parseInt(ano3));
     if (respuesta2 == 186) {
