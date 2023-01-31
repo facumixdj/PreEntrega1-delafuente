@@ -44,6 +44,7 @@ function preguntados() {
         auron();
         puntajefinal = (puntajefinal + 100);  
     }
+    //hago 3 comparaciones con lit porque puede ser que se confundan
     else if (respuesta1.toLowerCase() == "lit" || "lit killah" || "litkillah") {
         lit();
         puntajefinal = (puntajefinal + 1);
@@ -57,11 +58,23 @@ function sosargento() {
     let ano1;
     let ano2;
     let ano3;
+    //pido 3 numeros, lo convierto en integer o tipo numerico luego sumo usando un sumador
+    //de nombre respuesta2 y comparo con la respuesta correcta
+    // podria haber simplificado el codigo lo dejo comentado en la linea correspondiente
+    // lo hice asi para que sea mas claro
     alert("¿En que años salio Argentina campeon?Ingrese 1 año a la vez y unicamente 2 digitos")
     ano1 = prompt("Primer Campeonato de argentina");
     ano2 = prompt("Segundo Campeonato de Argentina");
     ano3 = prompt("Tercer Campeonato de Argentina");
-    respuesta2 = 0;
+    // aqui podria haber evitado usar la variable respuesta 2 y implemnete hacer la suma dentro
+/* 
+
+    if ((parseInt(ano1) + parseInt(ano2) + parseInt(ano3) == 186) {
+        alert("SOS ARGENTINO! te felicito");
+        puntajefinal = (puntajefinal +15);
+    } 
+    
+*/  respuesta2 = 0;
     respuesta2 = (parseInt(ano1) + parseInt(ano2) + parseInt(ano3));
     if (respuesta2 == 186) {
         alert("SOS ARGENTINO! te felicito");
